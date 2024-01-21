@@ -9,7 +9,7 @@ git clone https://github.com/mnrniloy/Neptune_kernel_sm8150_oneplus.git -b inlin
 echo ""
 
 echo "Cloning Hardware"
-git clone https://github.com/mnrniloy/hardware_oneplus.git -b 14 hardware/oneplus
+git clone https://github.com/mnrniloy/hardware_oneplus.git -b 14-m hardware/oneplus
 echo ""
 
 echo "Cloning Vendor blobs"
@@ -23,6 +23,7 @@ git clone https://github.com/yaap/device_qcom_common.git -b fourteen device/qcom
 git clone https://gitlab.com/yaosp/vendor_qcom_common.git -b fourteen vendor/qcom/common
 git clone https://github.com/mnrniloy/device_qcom_qssi.git device/qcom/qssi
 git clone https://github.com/mnrniloy/vendor_qcom-opensource_core-utils.git vendor/qcom/opensource/core-utils
+git clone https://github.com/RisingOS-staging/vendor_qcom_opensource_commonsys_dpm -b fourteen vendor/qcom/opensource/commonsys/dpm
 echo ""
 
 #  Apps
