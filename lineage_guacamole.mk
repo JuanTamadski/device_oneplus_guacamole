@@ -14,15 +14,7 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Matrixx
-MATRIXX_BUILD_TYPE := UnOfficial
-MATRIXX_MAINTAINER := NILOY
-MATRIXX_CHIPSET := SM8150
-MATRIXX_BATTERY := 4085mAh
-MATRIXX_DISPLAY := 1440x3120
-WITH_GMS := true
-TARGET_HAS_UDFPS := true
-TARGET_DISABLE_EPPE := true
+
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_guacamole
