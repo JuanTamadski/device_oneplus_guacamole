@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_guacamole.mk
+    $(LOCAL_DIR)/superior_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-	lineage_guacamole-user \
-	lineage_guacamole-userdebug \
-	lineage_guacamole-eng
+	superior_guacamole-user \
+	superior_guacamole-userdebug \
+	superior_guacamole-eng
