@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
 # Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_guacamole
+PRODUCT_NAME := superior_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1917
@@ -24,14 +24,14 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_SYSTEM_NAME := OnePlus7Pro
 PRODUCT_SYSTEM_DEVICE := OnePlus7Pro
 
-PRODUCT_AAPT_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-PRODUCT_CHARACTERISTICS := nosdcard
 
-# Boot animation
-scr_resolution := 1440
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Build Fingerprint
 BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2206171030:user/release-keys"
